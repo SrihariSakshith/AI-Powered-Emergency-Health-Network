@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Nav from "./Nav"; // Updated import path
-import Footer from "./Footer"; // Updated import path
+import Nav from "./Nav.js"; // Updated import path
+import Footer from "./Footer.js"; // Updated import path
 import "./css/Chat.css";
 
 const ChatClient = ({ username, role, onLogout }) => {
@@ -14,7 +14,7 @@ const ChatClient = ({ username, role, onLogout }) => {
     setMessages((prev) => [...prev, userMessage]);
 
     try {
-      const response = await fetch("http://localhost:4001/chat", {
+      const response = await fetch("http://localhost:3000/chat/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: input }),
