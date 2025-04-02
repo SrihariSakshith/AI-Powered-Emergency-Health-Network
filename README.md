@@ -44,7 +44,6 @@ AI-Powered Emergency Health Network is a real-time emergency response system des
 ## Usage
 - **As a Patient**: Search for hospitals, view available equipment, and request emergency support.
 - **As a Hospital Manager**: Update hospital resources, manage emergency cases, and track requests.
-- **As an Emergency Responder**: Receive real-time alerts and assist in emergency situations.
 
 ## Contributing
 We welcome contributions! Follow these steps:
