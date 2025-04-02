@@ -16,7 +16,6 @@ AI-Powered Emergency Health Network is a real-time emergency response system des
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB Atlas
 - **AI/ML**: Natural Language Processing (NLP) for chatbot functionality
-- **Cloud & APIs**: Google Maps API, Twilio for SMS alerts
 
 ## Installation
 ### Prerequisites
