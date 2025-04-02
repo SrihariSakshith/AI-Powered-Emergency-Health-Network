@@ -4,7 +4,6 @@
 AI-Powered Emergency Health Network is a real-time emergency response system designed to enhance healthcare accessibility and efficiency. It provides real-time hospital, blood, and organ donor details, integrates AI-driven assistance, and offers smart emergency management solutions.
 
 ## Features
-- **Real-time Emergency Alerts**: Instantly notifies blood donors and hospitals during medical emergencies.
 - **AI-Powered Chatbot**: Provides intelligent responses regarding hospital details and medical assistance.
 - **Live Hospital Database**: Displays real-time data on available equipment, tests, and resources.
 - **User-Friendly Interface**: Intuitive UI for patients, hospital managers, and emergency responders.
