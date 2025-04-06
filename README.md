@@ -17,8 +17,8 @@ The AI-Powered Emergency Health Network is a real-time emergency response system
 - AI/ML: Natural Language Processing (NLP) for chatbot functionality  
 
 ## Demo & Links  
-- ▶️ Demo Video (3 Minutes): https://youtu.be/59m6fwLmNJI  
-- 🚀 MVP (Live Project): https://ai-powered-emergency-health-network-frontend.vercel.app/  
+- ▶️ Demo Video : https://youtu.be/59m6fwLmNJI  
+- 🚀 MVP        : https://ai-powered-emergency-health-network-frontend.vercel.app/  
 
 ## Installation
 
