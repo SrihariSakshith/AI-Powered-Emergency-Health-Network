@@ -1,0 +1,44 @@
+# Ignore all environment files
+.env
+.env.*
+
+# Ignore node_modules in all folders
+**/node_modules/
+
+# Ignore build output
+dist/
+build/
+
+# Ignore logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE settings
+.vscode/
+.idea/
+
+# Ignore test coverage
+coverage/
+
+# Ignore local environment or tool configs
+*.local
+*.cache
+*.tmp
+*.swp
+
+# Optional: ignore compiled files
+*.out
+*.class
+*.pyc
+*.o
+
+# Optional: ignore uploads or generated files
+uploads/
+public/uploads/
