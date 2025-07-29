@@ -1,0 +1,201 @@
+/* General Layout */
+.ai-home-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1c1c1c;
+  background-color: #f9f9f9;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  padding: 0 20px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.donate-link {
+  flex:1;
+  background: #e60023;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  border: none;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.emergency-btn {
+  flex:1;
+  background: #e60023;
+  padding: 12px 16px; /* reduced horizontal padding */
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  border: none;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.donate-link:hover,
+.emergency-btn:hover {
+  background: #c4001d;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.network-img, .donate-img, .how-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.network-text, .donate-points, .how-steps {
+  max-width: 800px;
+  margin: 20px auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.donate-flex, .how-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .donate-flex, .how-flex {
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .donate-points, .how-steps {
+    text-align: left;
+  }
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  pointer-events: auto; /* Make sure this is present */
+}
+
+
+.modal {
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.3s ease;
+}
+
+.modal h2 {
+  margin-bottom: 15px;
+  color: #152a53;
+}
+
+.modal textarea {
+  width: 100%;
+  min-height: 100px;
+  resize: none;
+  padding: 15px;
+  border: 2px solid #007BFF;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.modal-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+}
+
+.modal-buttons button[type="submit"] {
+  background-color: #007BFF;
+  color: white;
+}
+
+.modal-buttons button[type="button"] {
+  background-color: #ccc;
+}
+
+.modal-buttons button:hover {
+  opacity: 0.9;
+}
