@@ -76,6 +76,51 @@ The AI-Powered Emergency Health Network is a real-time emergency response system
      ```bash
      npm start
      ```
+## Database Structure
+
+To ensure the code runs smoothly, please set up your database with the following structure. This project expects a relational database (such as MySQL or PostgreSQL) with tables as described below (adjust names/types if you use a different DBMS):
+
+### Example Tables
+
+#### Users
+| Column Name     | Data Type    | Description                 |
+|-----------------|-------------|-----------------------------|
+| id              | INT/UUID    | Primary Key                 |
+| name            | VARCHAR     | User's full name            |
+| email           | VARCHAR     | User's email address        |
+| password_hash   | VARCHAR     | Hashed password             |
+| role            | VARCHAR     | (patient/doctor/admin/etc.) |
+
+#### EmergencyRequests
+| Column Name     | Data Type    | Description                     |
+|-----------------|-------------|---------------------------------|
+| id              | INT/UUID    | Primary Key                     |
+| user_id         | INT/UUID    | Foreign key to Users            |
+| status          | VARCHAR     | (pending/active/closed)         |
+| location        | VARCHAR     | Location coordinates/address    |
+| timestamp       | DATETIME    | Time of emergency request       |
+
+#### Hospitals
+| Column Name     | Data Type    | Description                |
+|-----------------|-------------|----------------------------|
+| id              | INT/UUID    | Primary Key                |
+| name            | VARCHAR     | Hospital name              |
+| address         | VARCHAR     | Hospital address           |
+| phone           | VARCHAR     | Contact number             |
+| capacity        | INT         | Current available capacity |
+
+#### Ambulances
+| Column Name     | Data Type    | Description                |
+|-----------------|-------------|----------------------------|
+| id              | INT/UUID    | Primary Key                |
+| driver_name     | VARCHAR     | Ambulance driver name      |
+| status          | VARCHAR     | (available/busy/offline)   |
+| location        | VARCHAR     | Current ambulance location |
+
+> **Note:**  
+> - You may need to create additional tables for messages, logs, or other features depending on your project’s requirements.
+> - If you are using an ORM (like SQLAlchemy, Django ORM, etc.), make sure your model definitions match the above schema.
+> - Update your database credentials and connection settings in the project’s configuration files as needed.
 
 4. **Access the Website**  
    - Once both frontend and backend are running, open [http://localhost:3000/](http://localhost:3000/) in your browser to view the application.
