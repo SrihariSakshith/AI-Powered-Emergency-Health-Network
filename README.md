@@ -1,7 +1,7 @@
 # AI-Powered Emergency Health Network
 
 ## Introduction  
-The AI-Powered Emergency Health Network is a real-time emergency response system designed to enhance healthcare accessibility, efficiency, and coordination. It provides live information on hospital resources, blood and organ donor availability, and integrates AI-driven tools for smart emergency assistance and communication.
+The AI-Powered Emergency Health Network is a real-time emergency response system designed to enhance healthcare accessibility, efficiency, and coordination. It provides live information on hospital availability, resources, and emergency services using AI and real-time data.
 
 ## Features  
 - 🔹 AI-Powered Chatbot: Delivers intelligent, instant responses regarding hospitals and medical support.  
@@ -27,28 +27,58 @@ The AI-Powered Emergency Health Network is a real-time emergency response system
 - MongoDB Atlas account set up  
 
 ### Steps  
-1. Clone the Repository  
+1. **Clone the Repository**  
    ```bash
    git clone https://github.com/SrihariSakshith/AI-Powered-Emergency-Health-Network.git
    ```
 
-2. Navigate to the Project Directory  
+2. **Navigate to the Project Directory**  
    ```bash
    cd AI-Powered-Emergency-Health-Network
    ```
 
-3. Install Dependencies  
-   ```bash
-   npm install
-   ```
+3. **Running the Application**
 
-4. Setup Environment Variables  
-   - Create a .env file and configure your MongoDB URI and any required API keys.
+   The project is divided into frontend and backend. You need to run both separately.
 
-5. Run the Application  
-   ```bash
-   npm start
-   ```
+   ### Frontend
+   - Navigate to the frontend directory (if applicable).
+   - Install dependencies:
+     ```bash
+     npm install
+     ```
+   - Start the frontend:
+     ```bash
+     npm start
+     ```
+
+   ### Backend
+   - Navigate to the backend directory (if applicable).
+   - Create a `.env` file in the backend root directory with the following variables:
+     ```
+     DATABASE_NAME="YourDatabaseName"
+     MONGODB_URI="YourMongoDBAtlasURI"
+     GEMINI_API_KEY="YourGeminiAPIKey"
+     MONGO_URI="YourMongoDBAtlasURI"
+     NODE_ENV=production
+     PORT=3001
+     ```
+     > **Note:**  
+     > - Do **not** use real API keys in the README.  
+     > - The API keys/URIs mentioned above are for connecting to MongoDB Atlas and any additional APIs required by the backend.
+     > - Please provide your own MongoDB Atlas connection strings and Gemini API Key as needed.
+
+   - Install dependencies:
+     ```bash
+     npm install
+     ```
+   - Start the backend:
+     ```bash
+     npm start
+     ```
+
+4. **Access the Website**  
+   - Once both frontend and backend are running, open [http://localhost:3000/](http://localhost:3000/) in your browser to view the application.
 
 ## Usage  
 - 👤 As a Patient: Search nearby hospitals, view available equipment/resources, request help.  
